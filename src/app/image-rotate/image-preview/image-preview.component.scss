@@ -1,0 +1,38 @@
+/* Define standard variables*/
+$height:100vh;
+/**frame Variables */
+$frameHeight: 400px;
+$frameWidth: 300px;
+$frameborder: black solid 2px;
+/* image variables*/
+$imageMaxWidth: 90%;
+$imageMaxHeight: 90%;
+$invisibleFrameHeight: 300px;
+$inVisibleFrameWidth: 300px;
+.frame{
+    height: $frameHeight;
+    width: $frameWidth;
+    border: $frameborder;
+    text-align: center;
+}
+
+.imageDimenstions{
+ max-width: $imageMaxWidth;   
+ max-height: $imageMaxHeight;
+ padding: 5%;
+}
+
+.invisibleFrame{
+ position: relative;   
+ height: $invisibleFrameHeight;
+ width: $inVisibleFrameWidth;
+ text-align: center;
+}
+
+.screenHeight{
+    height: $height;
+}
+
+.rowWidth{
+    width: $frameWidth;
+}
