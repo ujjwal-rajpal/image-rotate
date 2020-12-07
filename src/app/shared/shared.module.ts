@@ -6,10 +6,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { LayoutModule } from '@angular/cdk/layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import  { MyMaterialModule } from './material.module';
+import { DefaultImagePipe } from './default-image.pipe';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [DefaultImagePipe],
   imports: [
     CommonModule,
     FlexLayoutModule,
@@ -20,7 +21,8 @@ import  { MyMaterialModule } from './material.module';
   ],
   exports:[
     FlexLayoutModule,
-    MyMaterialModule
+    MyMaterialModule,
+    DefaultImagePipe
   ]
 })
 export class SharedModule { }

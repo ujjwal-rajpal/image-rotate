@@ -3,7 +3,7 @@
     <div fxLayoutAlign="center center" [ngClass]= "{frame: true}">
         <!-- We are rotating the div and give a div fixed height and width -->
         <div [ngStyle]="{'transform': rotateValue}" [ngClass]= "{invisibleFrame: true}" >
-            <img src="{{imageUrl}}"  [ngClass]="{imageDimenstions: true}"  >
+            <img src="{{imageUrl | defaultImage: '../../../../../assets/default images/Default_avaitar.png' }}"  [ngClass]="{imageDimenstions: true}"  >
         </div>
     </div>
     <div fxLayoutAlign="space-evenly center" fxLayoutGap="2%" [ngClass]="{rowWidth: true}">

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./image-preview.component.scss']
 })
 export class ImagePreviewComponent implements OnInit {
-  imageUrl
+  imageUrl: string;
   rotateValue:string = 'rotate(0deg)';
   rotation = 0
   constructor() {
@@ -45,6 +45,9 @@ export class ImagePreviewComponent implements OnInit {
     return;
   }
   rotate(param){
+    if (!this.imageUrl) {
+      return;
+    }
     if(param == 'right'){
     this.rotation = this.rotation+90;      
     }else if(param='left'){
